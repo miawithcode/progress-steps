@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+:root{
+    --line--border--fill: #9f87af;
+    --line--border--empty: #ece5f1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #fffdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 800px;
+    margin-bottom: 70px;
+    max-width: 100%;
+}
+
+.progress-container::before{
+    content: "";
+    background-color: var(--line--border--empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+.progress{
+    background: var(--line--border--fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.55s ease;
+}
+
+.circle{
+    background-color: white;
+    color: var(--line--border--empty);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border: 5px solid var(--line--border--empty);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.55s ease;
+    font-size: 1.5rem;
+}
+
+.circle.active{
+    border-color: var(--line--border--fill);
+    color: var(--line--border--fill);
+}
+
+.btn{
+    background-color: var(--line--border--fill);
+    color: white;
+    border: 0;
+    padding: 12px 28px;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:disabled{
+    background-color: var(--line--border--empty);
+    cursor: not-allowed;
+}
