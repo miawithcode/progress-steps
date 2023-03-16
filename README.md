@@ -1,6 +1,6 @@
 # Progress Steps
 ![](images/progress-step.png)
-[Live Demo]()
+[Live Demo](https://mia-progress-steps.netlify.app/)
 
 [50projects50days](https://github.com/bradtraversy/50projects50days)第二天的练习：Progress Steps。
 
