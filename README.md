@@ -4,6 +4,7 @@
 <a href="https://mia-progress-steps.netlify.app/">Live Demo</a>
 </p>
 
+---
 [50projects50days](https://github.com/bradtraversy/50projects50days)第二天的练习：Progress Steps。
 
 ## What I Learned
